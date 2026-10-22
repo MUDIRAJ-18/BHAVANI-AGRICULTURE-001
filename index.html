@@ -1,0 +1,185 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BHAVANI AGRICULTURE 001</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f1f8e9;
+      color: #183b24;
+    }
+    header {
+      background: #176b35;
+      color: white;
+      padding: 22px 12px;
+      text-align: center;
+    }
+    header h1 { margin: 0; }
+    nav {
+      background: #104b27;
+      padding: 12px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 12px;
+      font-weight: bold;
+    }
+    .hero {
+      text-align: center;
+      padding: 65px 20px;
+      background: linear-gradient(135deg, #c5e1a5, #81c784);
+    }
+    .hero h2 { font-size: 32px; }
+    .button {
+      display: inline-block;
+      background: #d32f2f;
+      color: white;
+      text-decoration: none;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+    section { padding: 35px 18px; text-align: center; }
+    .videos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .card {
+      background: white;
+      padding: 22px;
+      border-radius: 12px;
+      box-shadow: 0 3px 12px #00000012;
+    }
+    .card a { color: #176b35; font-weight: bold; }
+    footer {
+      background: #104b27;
+      color: white;
+      text-align: center;
+      padding: 22px;
+    }
+    button {
+      padding: 10px 16px;
+      border: 0;
+      border-radius: 7px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>🌾 BHAVANI AGRICULTURE 001</h1>
+  <p>Smart Farming • AI Agriculture • రైతే రాజు</p>
+</header>
+
+<nav>
+  <a href="#home">Home / హోమ్</a>
+  <a href="#videos">Videos / వీడియోలు</a>
+  <a href="#about">About / మా గురించి</a>
+  <button onclick="toggleLanguage()">తెలుగు / English</button>
+</nav>
+
+<div class="hero" id="home">
+  <h2 id="heading">Welcome to Smart Agriculture!</h2>
+  <p id="intro">
+    Explore AI tractors, modern farming and amazing agriculture videos.
+  </p>
+  <a class="button" id="subscribe"
+     href="https://www.youtube.com/"
+     target="_blank" rel="noopener noreferrer">
+    Subscribe on YouTube
+  </a>
+</div>
+
+<section id="videos">
+  <h2 id="videoHeading">🚜 Agriculture Videos</h2>
+  <div class="videos">
+
+    <div class="card">
+      <h2>🚜 AI Tractor</h2>
+      <p>Discover the future of smart tractors.</p>
+      <a href="https://www.youtube.com/"
+         target="_blank" rel="noopener noreferrer">
+        Watch Video ▶
+      </a>
+    </div>
+
+    <div class="card">
+      <h2>🤖 AI Farming</h2>
+      <p>Explore artificial intelligence in agriculture.</p>
+      <a href="https://www.youtube.com/"
+         target="_blank" rel="noopener noreferrer">
+        Watch Video ▶
+      </a>
+    </div>
+
+    <div class="card">
+      <h2>🌱 Green Fields</h2>
+      <p>Celebrate farmers, crops and village life.</p>
+      <a href="https://www.youtube.com/"
+         target="_blank" rel="noopener noreferrer">
+        Watch Video ▶
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<section id="about">
+  <h2 id="aboutHeading">About Our Channel</h2>
+  <p id="aboutText">
+    BHAVANI AGRICULTURE 001 shares AI farming ideas,
+    tractor concepts and agriculture videos.
+  </p>
+</section>
+
+<footer>
+  <h3>🌾 BHAVANI AGRICULTURE 001</h3>
+  <p>Grow More • Farm Smart • రైతుల అభివృద్ధి</p>
+  <p>© 2026 BHAVANI AGRICULTURE 001</p>
+</footer>
+
+<script>
+  let telugu = false;
+
+  function toggleLanguage() {
+    telugu = !telugu;
+
+    document.getElementById("heading").textContent =
+      telugu ? "స్మార్ట్ వ్యవసాయానికి స్వాగతం!" :
+      "Welcome to Smart Agriculture!";
+
+    document.getElementById("intro").textContent =
+      telugu
+        ? "AI ట్రాక్టర్లు, ఆధునిక వ్యవసాయం మరియు అద్భుతమైన వీడియోలను చూడండి."
+        : "Explore AI tractors, modern farming and amazing agriculture videos.";
+
+    document.getElementById("videoHeading").textContent =
+      telugu ? "🚜 వ్యవసాయ వీడియోలు" : "🚜 Agriculture Videos";
+
+    document.getElementById("aboutHeading").textContent =
+      telugu ? "మా ఛానెల్ గురించి" : "About Our Channel";
+
+    document.getElementById("aboutText").textContent =
+      telugu
+        ? "BHAVANI AGRICULTURE 001 లో AI వ్యవసాయ ఆలోచనలు, ట్రాక్టర్లు మరియు వ్యవసాయ వీడియోలు ఉంటాయి."
+        : "BHAVANI AGRICULTURE 001 shares AI farming ideas, tractor concepts and agriculture videos.";
+
+    document.getElementById("subscribe").textContent =
+      telugu ? "YouTubeలో సబ్‌స్క్రైబ్ చేయండి" :
+      "Subscribe on YouTube";
+  }
+</script>
+
+</body>
+</html>
